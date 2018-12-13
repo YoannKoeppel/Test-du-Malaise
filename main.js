@@ -1,3 +1,5 @@
+console.log(data);
+
 var questions = ['Aimes-tu les cookies ?',
                  'Penses-tu que les éléphants sont fun ?',
                  'Es-tu malaisant ?'];
