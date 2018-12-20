@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html>
     <head>
         <meta charset="UTF-8"/>
@@ -9,22 +9,27 @@
         <title>Test du Malaise</title>
     </head>
     <body>
-        <header>
-            <h1>Test du Malaise</h1>
-            <!-- h1 ou logo à faire -->
-        </header>
-        
-        <div id="wrapper">
-            <section id="mainSection">
-                <p id="questions">Start ?</p>
-                <section id="reponses">
-                </section>
-            </section>
+        <div id="modal">
+            <div id="modalContent">
+                <div id= "titre">
+                    <p>Bienvenue sur</p>
+                    <h1>IMACLAISE</h1>
+                    <h2>Le test du Malaise</h2>
+                </div>
+                <div id= "intro">
+                    <form action="test.html" method="get">
+                        <p>Ce test consiste en quelques questions portant sur les thèmes du malaise idiot de Yoann, de la gênance de Lucas, et de la Beauferie de Margaux.</p>
+                        <p>Certaines de ces questions pourraient choquer les personnes les plus sensibles.</p>
+                        <p>Si tel est votre cas, n'allez pas plus loin et revenez en arrière ou fermez la fenêtre...</p>
+                        <p>Sinon, veuillez répondre objectivement! Ce test vous révèlera peut-être votre face cachée...</p>
+                        <p>Surtout ne revenez pas en arrière !</p>
+                        <p>Prenez le temps de répondre à TOUTES les questions posées et... Bon courage !!</p>
+                        <div id="submitButton">
+                            <input type="submit" value="Débuter le test !" />
+                        </div>
+                    </form> 
+                </div>
+            </div>
         </div>
-        
-        <footer>
-        </footer>
-        <script src="data.js"></script>
-        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
