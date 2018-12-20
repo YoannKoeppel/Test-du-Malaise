@@ -24,20 +24,12 @@ HEADER / FOOTER
 
 header, footer {
     width: 100vw;
-    position: fixed;
+    height: 10%;
     
     text-align: center;
     font-family: 'Stencil Std', fantasy;
     
     background-color: rgba(50, 50, 50, 0.8);
-}
-
-header {
-    top: 0px;
-}
-
-footer {
-    bottom: 0px;
 }
 
 
@@ -76,7 +68,7 @@ h2 {
     top: 0px;
     left: 0px;
     width: 100vw;
-    height: 100vh;
+    height: inherit;
     background-color: rgba(0,0,0, 0.7);
     
     display: flex;
@@ -105,7 +97,7 @@ QUESTIONS
 
 #wrapper {
     width: 100vw;
-    height: 100vh;
+    height: inherit;
     
     display: flex;
     flex-direction: column;
@@ -172,4 +164,35 @@ GAUGES
     background-color:rgba(236, 240, 241,0.5);
     display: flex;
     flex-direction: column-reverse;
+}
+
+
+@media screen and (max-width: 890px) {
+  body {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #gauges {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .gauge {
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fullGauge {
+        width: 40px;
+        height: 200px;
+
+        background-color:rgba(236, 240, 241,0.5);
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
