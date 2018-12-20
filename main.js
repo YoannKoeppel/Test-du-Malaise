@@ -27,6 +27,7 @@ var lvlYoann = 0, lvlLucas = 0, lvlMargaux = 0;
 
 var pointeurQuestions = 0;
 
+
 function _$(Id){
     return(document.getElementById(Id));
 }
@@ -126,6 +127,8 @@ function graphRes() {
     else {
         elementOfHtml += "<p>Si tu as ce message c'est que j'ai oublié une possibilité :(</p>";
     }
+    
+    elementOfHtml += "<p>Ton score est de : "+ (lvlLucas + lvlMargaux + lvlYoann) +"</p>";
     
     _$('mainSection').innerHTML = elementOfHtml;
 }
